@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      
+      
+      
+      <label id="name-label" for="name"> <!--precisa do label para colocar o "comando" do input (tb poderia ser só um placeholder) o atributo for vincula o label ao id do input -->
+        Enter your name 
+        <input id="name" type="text" required placeholder="Enter your name"> <!-- atributo id para vincular ao label, type pq quero que insiram texto e required pq é exigido para o envio do formulário -->
+        </input>
+      </label>
+      
+      <label id="email-label" for="email">
+        Email
+      <input id="email" type="email" required placeholder="Enter your Email"></input>
+      </label>
+      <label id="number-label" for="number">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age" ></label>
+      
+     <label for="dropdown"> What is your favorite feature of freeCodeCamp?
+       <select id="dropdown">
+         <option value="">Select an option</option>
+       <option value="1">Challenges</option>
+       <option value="2" >Projects</option>
+       <option value="3" >Community</option>
+       <option value="4" >Open source</option>
+
+       </select</label>
+
+       <label for="yes">
+         <input
+         id="yes" type="radio" value="1"
+         name="radio-buttom">
+         Yes
+       </label>
+
+       <label for="no" > 
+       <input
+       id="no" name="radio-buttom"
+        type="radio" value="2">
+       No
+       </label>
+   
+   <label name="checky">
+     <input type="checkbox" value="1"> Full stack
+     </label>
+
+      <label name="checky">
+     <input type="checkbox" value="2"> Back-end
+     </label>
+<label name="checky">
+     <input type="checkbox" value="3">
+     Font-end 
+     </label>
+   <label>Aditional comments
+     <textarea>
+
+     </textarea>
+   </label>
+
+
+<input
+id="submit" type="submit" value="Submit"> 
+
+    </form>
+  </body>
+</html>
